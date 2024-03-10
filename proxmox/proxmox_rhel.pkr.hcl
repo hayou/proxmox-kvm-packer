@@ -227,9 +227,9 @@ build {
     inline_shebang  = "/bin/sh -x"
   }
 
-  provisioner "ansible" {
-    extra_arguments = concat("${var.ansible_extra_args}","${var.ansible_verbosity}")
-    playbook_file   = "extra/playbooks/provision_rhel.yaml"
-  }
+#  provisioner "ansible" {
+#    extra_arguments = concat("${var.ansible_extra_args}","${var.ansible_verbosity}")
+#    playbook_file   = "extra/playbooks/provision_rhel.yaml"
+#  }
 
 }
